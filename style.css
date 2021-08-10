@@ -36,6 +36,14 @@ a:visited {
     text-align: center;
 }
 
+.leftwt {
+    float:left;
+}
+
+.rightwt {
+    float: right;
+}
+
 .moredown {
     padding: 430px 0px;
 }
@@ -113,6 +121,11 @@ transform: translate(0,-50%);
     padding: 8px 80px;
 }
 
+#epic {
+    object-fit: cover;
+    border-radius: 2%;
+}
+
 .parallax {
     background-image: url("Parallax.png");
     min-height: 400px;
@@ -135,6 +148,10 @@ transform: translate(0,-50%);
 
 .parallax .blur {
     height: 100%;position: absolute;width: 100%;backdrop-filter: blur(5px);color:#d1d1d1;text-align:center;
+}
+
+.downloadown {
+    padding: 100px 0px;
 }
 
 .parallax .blur .text {
