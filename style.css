@@ -1,0 +1,144 @@
+html,body {
+    background: white;
+    color: black;
+    padding:0;margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: white !important;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 0 0 15px gray;
+}
+
+a:visited {
+    color: black;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.center {
+    float: center;
+    text-align: center;
+}
+
+.moredown {
+    padding: 450px 0px;
+}
+
+.fancybutton {
+    display: inline-block;
+    background-color: #0b5a7c;
+    color: white;
+    text-align: center;
+    font-size: unset;
+    padding: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    appearance: flat;
+    border:  none;
+    outline: none;
+    border-radius: 5px;
+    font: Segoe UI;
+}
+
+.nav {
+    padding: 20px 10px;
+    background:#e2e2e2;
+    color: #000;
+    position: relative;
+    height: 64px !important;
+    z-index: 999999;
+    position: sticky;
+    height: 64px !important;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 4px 8px 0px #969696;
+    -webkit-box-shadow: 0px 4px 8px 0px #969696;
+}
+
+.nav ul {
+    list-style-type: none;
+    position: absolute;
+    position: absolute;
+    right: 30px;
+    top: 50%;transform:translate(0,-50%);
+    margin:0;
+}
+
+.nav > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.nav h1 {
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: 0;
+}
+
+.nav > img {
+    float:left;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+left: 10px;
+top: 50%;
+transform: translate(0,-50%);
+}
+
+.content {
+    padding: 8px 80px;
+}
+
+.parallax {
+    background-image: url("Parallax.png");
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax .blur {
+    height: 100%;position: absolute;width: 100%;backdrop-filter: blur(5px);color:#d1d1d1;text-align:center;
+}
+
+.parallax .blur .text {
+    top:50%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.parallax .blur .text span.o {
+    /* color: #fff;
+    text-shadow: 0 0 15px white; */
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
