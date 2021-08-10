@@ -123,6 +123,16 @@ transform: translate(0,-50%);
     background-size: cover;
 }
 
+.downloadmainparallax {
+    background-image: url("downloadparallax.png");
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .parallax .blur {
     height: 100%;position: absolute;width: 100%;backdrop-filter: blur(5px);color:#d1d1d1;text-align:center;
 }
@@ -137,6 +147,27 @@ transform: translate(0,-50%);
 }
 
 .parallax .blur .text span.o {
+    /* color: #fff;
+    text-shadow: 0 0 15px white; */
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.downloadmainparallax .blur {
+    height: 100%;position: absolute;width: 100%;backdrop-filter: blur(5px);color:#d1d1d1;text-align:center;
+}
+
+.downloadmainparallax .blur .text {
+    top:50%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.downloadmainparallax .blur .text span.o {
     /* color: #fff;
     text-shadow: 0 0 15px white; */
     color: transparent;
