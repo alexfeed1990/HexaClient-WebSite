@@ -22,20 +22,22 @@
         
     </div>
     <script>
-        /* construct manually */
+        function donothing() {
+            //donothing
+        }
         var bar1 = new ldBar("#loadingbar");
-        /* ldBar stored in the element */
         var bar2 = document.getElementById('loadingbar').ldBar;
-        bar1.set(100);
-        for (let i = 0; i < bar1.length; i++) {
-            if (bar1.length != 100) {
-                bar1.set([i]);
-            } else {
-                window.location.replace("/home.html");
-            }
-        } 
-        //window.location.replace("/home.html");
-      </script>
-
+        setTimeout(function(){
+            bar1.set(100);
+            for (let i = 0; i < bar1.length; i++) {
+                if (bar1.length != 100) {
+                    bar1.set([i]);
+                }
+            } 
+        },500);
+        setTimeout(function(){
+            window.location.replace("/home.html");
+        },2000);  
+    </script>
 </body>
 </html>

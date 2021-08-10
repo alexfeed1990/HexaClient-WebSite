@@ -23,6 +23,7 @@ a:visited {
 
 .left {
     float:left;
+    text-align: left;
 }
 
 .right {
@@ -36,7 +37,7 @@ a:visited {
 }
 
 .moredown {
-    padding: 450px 0px;
+    padding: 430px 0px;
 }
 
 .fancybutton {
