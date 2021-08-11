@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,76 +8,78 @@
     <title>Hexa Client - Home</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-<div class="nav sticky">
-    <img src="/Logo.png" alt="">
-    <h1>Hexa Client</h1>
-    <ul>
-        <li><a href="/home.html">Home</a></li>
-        <li><a href="/download.html">Download</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li> 
-    </ul>
-</div>
-<div class="parallax">
-    <div class="blur">
-        <div class="text">
-            The <span class="o">best</span> Minecraft Client
+    <div class="nav sticky">
+        <img src="assets/images/Logo.png">
+        <h1>Hexa Client</h1>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/download.html">Download</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="parallax">
+        <div class="blur">
+            <div class="text">
+                The <span class="o">best</span> Minecraft Client
+            </div>
         </div>
     </div>
-</div>
-<div class="content">
-    <div class="left">
-        <h1>Better than Lunar.</h1>
-        <h2>Smooth PVP experience.</h2>
-        <h2>Doubles FPS.</h2>
-        <h2>Uses Optifine</h2>
-        <h2>Over 50 mods.</h2>
-        <h2>Completely free!</h2>
-        <h2>Active support!</h2>
-        <h2>Easy setup!</h2>
+    <div class="content">
+        <div class="left">
+            <h1>Better than Lunar.</h1>
+            <h2>Smooth PVP experience.</h2>
+            <h2>Doubles FPS.</h2>
+            <h2>Uses Optifine</h2>
+            <h2>Over 50 mods.</h2>
+            <h2>Completely free!</h2>
+            <h2>Active support!</h2>
+            <h2>Easy setup!</h2>
+        </div>
+        <div class="right">
+            <div class="thecontentfunny"></div>
+            <script>
+                var x = Math.floor(Math.random() * 8);
+                var y;
+                switch (x) {
+                    case 0:
+                        y = "<h1>Go touch grass</h1><h3>- Grandma</h3>";
+                        break;
+                    case 1:
+                        y = "<h1>What client are you using?</h1><h3>- Everyone</h3>";
+                        break;
+                    case 2:
+                        y = "<h1>The essentials for PVP</h1><h3>- Dad</h3>";
+                        break;
+                    case 3:
+                        y = "<h1>So smooth.</h1><h3>- Everyone</h3>";
+                        break;
+                    case 4:
+                        y = "<h1>Ur client sucks!</h1><h3>- Lunar users</h3>";
+                        break;
+                    case 5:
+                        y = "<h1>took to long to make this site</h1><h3>- Slashed</h3>";
+                        break;
+                    case 6:
+                        y = "<h1>nice client</h1><h3>- Kat21</h3>";
+                        break;
+                    case 7:
+                        y = "<h1>Try to socialize with this.</h1><h3>- Mom</h3>";
+                        break;
+                    case 8:
+                        y = "<h1>Why am i getting more girlfriends?</h1><h3>- Everyone</h3>";
+                        break;
+                }
+                document.querySelector('div.thecontentfunny').innerHTML = y;
+            </script>
+        </div>
+        <div class="center moredown">
+            <h2>Wanna go check it out?</h2>
+            <button class="fancybutton" href="/download.html">Downloads</button>
+        </div>
     </div>
-    <div class="right">
-        <div class="thecontentfunny"></div>
-        <script>
-            var x = Math.floor(Math.random() * 8);
-            var y;
-            switch (x) {
-                case 0:
-                    y = "<h1>Go touch grass</h1><h3>- Grandma</h3>";
-                    break;
-                case 1:
-                    y = "<h1>What client are you using?</h1><h3>- Everyone</h3>";
-                    break;
-                case 2:
-                    y = "<h1>The essentials for PVP</h1><h3>- Dad</h3>";
-                    break;
-                case 3:
-                    y = "<h1>So smooth.</h1><h3>- Everyone</h3>";
-                    break;
-                case 4:
-                    y = "<h1>Ur client sucks!</h1><h3>- Lunar users</h3>";
-                    break;
-                case 5:
-                    y = "<h1>took to long to make this site</h1><h3>- Slashed</h3>";
-                    break;
-                case 6:
-                    y = "<h1>nice client</h1><h3>- Kat21</h3>";
-                    break;
-                case 7:
-                    y = "<h1>Try to socialize with this.</h1><h3>- Mom</h3>";
-                    break;
-                case 8:
-                    y = "<h1>Why am i getting more girlfriends?</h1><h3>- Everyone</h3>";
-                    break;
-            }
-            document.querySelector('div.thecontentfunny').innerHTML = y;
-        </script>
-    </div>
-    <div class="center moredown">
-        <h2>Wanna go check it out?</h2>
-        <button class="fancybutton" href="/download.html">Downloads</button>
-    </div>
-</div>
 </body>
+
 </html>

@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hexa Client</title>
-    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
-    <link rel="stylesheet" type="text/css" href="loadingstyle.css"/>
-    <script type="text/javascript" src="loading-bar.js"></script>
+    <link rel="stylesheet" type="text/css" href="loading-bar.min.css" />
+    <link rel="stylesheet" type="text/css" href="loadingstyle.css" />
+    <script type="text/javascript" src="loading-bar.min.js"></script>
 </head>
+
 <body>
-    <div class="logo">    
-        <img src="Logo.png" width="100"
-        height="100" alt="">
+    <div class="logo">
+        <img src="Logo.png" width="100" height="100" alt="">
     </div>
 
-    <div 
-        id="loadingbar" 
-        data-value="0" 
-        data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)">
-        
+    <div id="loadingbar" data-value="0" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)">
+
     </div>
     <script>
         function donothing() {
@@ -27,17 +25,18 @@
         }
         var bar1 = new ldBar("#loadingbar");
         var bar2 = document.getElementById('loadingbar').ldBar;
-        setTimeout(function(){
+        setTimeout(function() {
             bar1.set(100);
             for (let i = 0; i < bar1.length; i++) {
                 if (bar1.length != 100) {
                     bar1.set([i]);
                 }
-            } 
-        },500);
-        setTimeout(function(){
+            }
+        }, 500);
+        setTimeout(function() {
             window.location.replace("/home.html");
-        },2000);  
+        }, 4000);
     </script>
 </body>
+
 </html>
